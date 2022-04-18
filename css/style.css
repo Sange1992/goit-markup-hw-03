@@ -32,7 +32,7 @@ body {
   margin: -1px;
 }
 
-/*-------------- HEADER------------ */
+/*-------------- HEADER-------------- */
 
 .container{
   width: 1200px;
@@ -46,6 +46,7 @@ header .container{
 }
 .header-list{
   display: flex;
+  border: solid 1px black;
 }
 .header-contacts{
   display: flex;
@@ -61,17 +62,30 @@ header .container{
   line-height: 1.19;
   letter-spacing: 0.03em;
   color: #000000;
+
+  margin-right: 93px;
 }
+
 .header-link {
   color: var(--second-fonts-color);
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
+  margin-right: 50px;
 }
+
+.hrader-link:last-child {
+  margin-right: 0px;
+}
+
+
 .header-link:hover,
 .header-link:focus {
   color: var(--accent-color);
+}
+.header-conects{
+  margin-left: auto;
 }
 .contacts-link {
   color: var(--first-fonts-color);
@@ -79,11 +93,18 @@ header .container{
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
+
 }
+.contacts-link:not(:last-child){
+  margin-right: 50px;
+}
+
+
 .contacts-link:hover,
 .contacts-link:focus {
   color: var(--accent-color);
 }
+
 
 /*-------------- HERO------------ */
 .hero-contend {

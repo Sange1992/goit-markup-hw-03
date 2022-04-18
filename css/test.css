@@ -1,0 +1,23 @@
+body{
+    background: grey;
+}
+.container{
+    border: solid 1px blue;
+    background: darkcyan;
+}
+.list{
+    list-style: none;
+    display: flex;
+}
+.item{
+    width: 75px;
+    height: 75px;
+    border: solid 3px red;
+    color: white;
+    font-size: 70px;
+    background-color: black;
+    margin-left: 50px;
+}
+.item:last-child {
+    margin-left: 0;
+}
