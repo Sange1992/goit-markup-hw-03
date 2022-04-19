@@ -44,6 +44,9 @@ body {
   clip-path: inset(50%);
   margin: -1px;
 }
+.btn{
+  border: none;
+}
 
 /*-------------- HEADER-------------- */
 
@@ -51,7 +54,6 @@ body {
   width: 1200px;
   padding: 0 15px;
   margin: 0 auto;
-  border: solid var(--accent-color) 1px;
 }
 header .container{
   display: flex;
@@ -282,6 +284,10 @@ header .container{
 }
 
 /*-------------- PORFOLIO------------ */
+.porfolio{
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
 .portfolio-btn {
   font-family: inherit;
   font-weight: 500;
@@ -289,11 +295,35 @@ header .container{
   line-height: 1.62;
   letter-spacing: 0.03em;
   color: var(--second-fonts-color);
+
+
+  padding-left: 22px;
+  padding-right: 22px;
+
+}
+.portfolio-item:not(:last-child){
+  margin-right: 9px;
 }
 .portfolio-btn:hover,
 .portfolio-btn:focus {
   color: var(--third-fonts-color);
   background-color: var(--accent-color);
+}
+.porfolio-buttons{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+.example-list{
+  display: flex;
+  flex-wrap: wrap;
+}
+.example-item{
+  margin-bottom: 30px;
+}
+.example-item:not(:nth-child(3n)){
+  margin-right: 30px;
+
 }
 .portfolio-title {
   font-size: 18px;
