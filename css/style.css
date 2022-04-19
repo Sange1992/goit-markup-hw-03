@@ -6,6 +6,19 @@
   --third-fonts-color: #ffffff;
   --accent-color: #2196f3;
 }
+p,h1,h2,h3,h4,h5,h6{
+  margin: 0;
+}
+ul,ol{
+  margin: 0;
+  padding-left: 0;
+}
+img{
+  display: block;
+}
+button{
+  display: block;
+}
 body {
   font-family: "roboto", sans-serif;
   color: var(--first-fonts-color);
@@ -63,7 +76,10 @@ header .container{
   color: #000000;
 
   margin-right: 93px;
+  padding-top:25px ;
+  padding-bottom: 25px;
 }
+
 
 .header-link {
   color: var(--second-fonts-color);
@@ -105,13 +121,20 @@ header .container{
 /*-------------- HERO------------ */
 .hero-contend {
   background-color: var(--second-bg-color);
+  padding-top: 200px;
+  padding-bottom: 200px;
 }
+
 .hero-title {
   color: var(--third-fonts-color);
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
   text-transform: uppercase;
+  text-align: center;
+  max-width: 696px;
+  margin: 0 auto ;
+  margin-bottom: 30px;
 }
 .hero-btn {
   color: var(--third-fonts-color);
@@ -120,9 +143,17 @@ header .container{
   font-weight: 700;
   font-size: 16px;
   line-height: 1.88;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+  margin: 0 auto;
+
 }
 
 /*-------------- FEATURES------------ */
+.features{
+  padding: 94px 0;
+}
 
 .features-title {
   font-weight: 700;
@@ -131,6 +162,14 @@ header .container{
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #212121;
+
+  margin-bottom: 10px;
+}
+.features-list{
+  display: flex;
+}
+.features-item:not(:last-child){
+  margin-right: 30px;
 }
 .features-text {
   font-weight: 400;
@@ -140,19 +179,47 @@ header .container{
 }
 
 /*-------------- ABOUT------------ */
+.about {
+  padding-bottom: 94px; 
+}
+.about-list{
+  display: flex;
+}
+.about-item:not(:last-child){
+  margin-right: 30px;
+}
 .about-title {
   font-size: 36px;
   line-height: 1.16;
   letter-spacing: 0.03em;
   color: var(--second-fonts-color);
+  text-align: center;
+  letter-spacing: 0.03em;
+
+  margin-bottom: 50px;
 }
 
 /*-------------- TEAM------------ */
+.team{
+  padding-bottom: 94px;
+}
+.team-list{
+  display: flex;
+}
+.team-item:not(:last-child){
+  margin-right: 30px;
+}
 .team-title {
   font-size: 36px;
   line-height: 1.16;
   letter-spacing: 0.03em;
   color: var(--second-fonts-color);
+  text-align: center;
+  letter-spacing: 0.03em;
+  margin-bottom: 50px;
+}
+.team-img{
+  margin-bottom: 30px;
 }
 .team-name {
   font-weight: 500;
@@ -160,16 +227,25 @@ header .container{
   line-height: 1.19;
   letter-spacing: 0.03em;
   color: var(--second-fonts-color);
+  text-align: center;
+  letter-spacing: 0.03em;
+
+  margin-bottom: 10px;
 }
 .team-position {
   font-size: 16px;
   line-height: 1.19;
   letter-spacing: 0.03em;
+  text-align: center;
+  letter-spacing: 0.03em;
 }
+
 
 /*-------------- FOOTER------------ */
 .footer {
   background-color: var(--second-bg-color);
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 .footer-link {
   font-family: "Raleway";
@@ -197,6 +273,12 @@ header .container{
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
+}
+.adress-item:not(:last-child){
+  margin-bottom: 9px;
+}
+.footer-adress{
+  margin-top: 20px;
 }
 
 /*-------------- PORFOLIO------------ */
