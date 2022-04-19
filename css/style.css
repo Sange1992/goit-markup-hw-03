@@ -46,7 +46,6 @@ header .container{
 }
 .header-list{
   display: flex;
-  border: solid 1px black;
 }
 .header-contacts{
   display: flex;
@@ -72,13 +71,10 @@ header .container{
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
+}
+.nav-item:not(:last-child){
   margin-right: 50px;
 }
-
-.hrader-link:last-child {
-  margin-right: 0px;
-}
-
 
 .header-link:hover,
 .header-link:focus {
@@ -93,11 +89,11 @@ header .container{
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
+}
+.contact-item:not(:first-child){
+  margin-left: 50px;
+}
 
-}
-.contacts-link:not(:last-child){
-  margin-right: 50px;
-}
 
 
 .contacts-link:hover,
